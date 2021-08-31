@@ -1,50 +1,51 @@
-# Temple of Time 🛕
+# Quasar App (qs-revue-draggable) 🤏
 
-![alt text](https://64.media.tumblr.com/69de98405fbd0ff131c7e34e71e517f4/tumblr_nv4euoaSRu1ufzu8po1_500.gifv)
+![top-language](https://img.shields.io/github/languages/top/bcakmakoglu/revue-draggable-example-quasar)
+[![dependencies Status](https://status.david-dm.org/gh/bcakmakoglu/revue-draggable-example-quasar.svg)](https://david-dm.org/bcakmakoglu/revue-draggable-example-quasar)
+[![devDependencies Status](https://status.david-dm.org/gh/bcakmakoglu/revue-draggable-example-quasar.svg?type=dev)](https://david-dm.org/bcakmakoglu/revue-draggable-example-quasar?type=dev)
+![vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/bcakmakoglu/revue-draggable-example-quasar)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bcakmakoglu/revue-draggable-example-quasar)
+![GitHub last commit](https://img.shields.io/github/last-commit/bcakmakoglu/revue-draggable-example-quasar)
 
-This is a template repository containing some stuff to save time when creating a new repo.
+**A Quasar Framework app using [Revue-Draggable](https://github.com/bcakmakoglu/revue-draggable). 🍟**
 
-![top-language](https://img.shields.io/github/languages/top/bcakmakoglu/temple-of-time)
-[![dependencies Status](https://status.david-dm.org/gh/bcakmakoglu/temple-of-time.svg)](https://david-dm.org/bcakmakoglu/temple-of-time)
-[![devDependencies Status](https://status.david-dm.org/gh/bcakmakoglu/temple-of-time.svg?type=dev)](https://david-dm.org/bcakmakoglu/temple-of-time?type=dev)
-![vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/bcakmakoglu/temple-of-time)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/bcakmakoglu/temple-of-time)
-![GitHub last commit](https://img.shields.io/github/last-commit/bcakmakoglu/temple-of-time)
+## 🪄 Registering Revue Draggable
+```bash
+yarn add @braks/revue-draggable
+```
 
-**Awesome Repo 🍟**
+```js
+// app boot file (/src/boot)
+// --> boot files are part of "main.js"
+// https://v2.quasar.dev/quasar-cli/boot-files
+boot: [
+  '~src/boot/register-draggable.ts'
+]
+```
 
+Check the [Example Component](./src/components/CompositionComponent.vue) to see it in action.
 
 ## 🛠 Setup
-Some info on setup here.
 
 ```bash
-# install
-$ yarn add @braks/repo
-
-# or
-$ npm i --save @braks/repo
+yarn
 ```
 
 ## 🧪 Development
-Info on development.
+### Start the app in development mode (hot-code reloading, error reporting, etc.)
 
-Example for starting/building app:
 ```bash
-# start (dev)
-$ yarn dev
-
-# build app
-$ yarn build
-
-# serve app from build
-$ yarn serve
-
-# build dist
-$ yarn build:dist
+quasar dev
 ```
 
-## 🕵🏻‍♂️ Tests
-Some info about testing.
+### Lint the files
 
-# Sponsors 💝
-Possible sponsor list
+```bash
+yarn run lint
+```
+
+### Build the app for production
+
+```bash
+quasar build
+```

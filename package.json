@@ -1,37 +1,44 @@
 {
-  "name": "temple-of-time",
+  "name": "qs-revue-draggable",
   "version": "0.0.1",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bcakmakoglu/temple-of-time"
-  },
-  "keywords": [
-    "braks"
-  ],
-  "license": "MIT",
-  "author": "Burak Cakmakoglu<https://github.com/bcakmakoglu>",
-  "homepage": "https://github.com/bcakmakoglu/temple-of-time#readme",
-  "exports": {
-    ".": {
-      "import": "./dist/temple-of-time.esm.js",
-      "require": "./dist/temple-of-time.cjs.js"
-    },
-    "./*": "./*"
-  },
-  "main": "./dist/temple-of-time.cjs.js",
-  "types": "./dist/temple-of-time.d.ts",
-  "module": "./dist/temple-of-time.esm.js",
-  "unpkg": "./dist/temple-of-time.iife.min.js",
-  "jsdelivr": "./dist/temple-of-time.iife.min.js",
-  "files": [
-    "dist"
-  ],
+  "description": "A Quasar Framework app",
+  "productName": "Quasar App",
+  "author": "Braks <78412429+bcakmakoglu@users.noreply.github.com>",
+  "private": true,
   "scripts": {
-    "test": "exit 0"
+    "lint": "eslint --ext .js,.ts,.vue ./",
+    "test": "echo \"No test specified\" && exit 0"
   },
-  "publishConfig": {
-    "access": "public",
-    "registry": "http://registry.npmjs.org/"
+  "dependencies": {
+    "@braks/revue-draggable": "^0.3.0-5",
+    "@quasar/extras": "^1.0.0",
+    "core-js": "^3.6.5",
+    "quasar": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@quasar/app": "^3.0.0",
+    "@types/node": "^10.17.15",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
   }
 }
